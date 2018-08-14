@@ -1,0 +1,21 @@
+.wrapper {
+    width: 480px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 15px 20px 25px;
+  }
+  
+  .box {      
+    margin: 30px;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+    float: left;
+    background: brown;
+    border-radius: 10px;
+  }   
+  
+  p {
+    text-align: justify;
+    text-indent: 1.5rem;
+  }

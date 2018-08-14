@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+  background-color: #424242;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 15px;
+}
+
+.sidebar {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  height: 250px;
+  background-color: palevioletred;
+}
+
+.content {
+  display: inline-block;
+  
+  float: left;
+  width: 65%;
+  margin-left: 5%;
+  height: 250px;
+  background-color: teal;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
