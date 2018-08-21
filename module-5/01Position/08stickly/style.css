@@ -1,0 +1,19 @@
+.attention{
+    position: sticky;
+    vertical-align: top;
+}
+.d1,.d2{
+    display: inline-block;
+}
+.d1{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    width: 19%;
+    text-align: center;
+    height: 100%;
+    vertical-align: top;
+}
+.d2{
+    width:80%;
+}

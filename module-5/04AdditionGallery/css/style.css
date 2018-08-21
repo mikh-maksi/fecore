@@ -1,0 +1,41 @@
+body {
+    counter-reset: count-img 0;
+}
+.d{
+    counter-increment: count-img;
+    position: relative;
+}
+.d:before{
+    position: absolute;
+    content: counter(count-img) ;
+    margin-right: 10px;
+    font-weight:bold; 
+    top:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color:#f33;
+}
+.wrapper{
+    width:392px;
+    margin:0 auto;
+}
+.d{
+    display:inline-block;
+    cursor: pointer;
+}
+.d:hover >.line{
+    display: block;
+}
+.line{
+    display: none;
+    position: absolute;
+    height:40px;
+    background: rgba(155, 155, 155, 0.5);
+    width:128px;
+    top:50%;
+    transform: translatey(-50%);
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color:#fff;
+}

@@ -1,0 +1,14 @@
+.wrapper{
+    width:128px;
+    margin:0 auto;
+    text-align: center;
+    position: relative;
+}
+.tree2{
+     
+}
+.ball{
+    position: absolute;
+    top:290px;
+    left:50%;
+}

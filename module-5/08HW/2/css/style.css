@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+*{
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper{
+    width:1170px;
+    margin:0 auto;
+}
+.mainmenu{
+    float:right;
+}
+.mainmenu ul{
+    width:530px;
+    text-align: justify;
+
+}
+.mainmenu ul li{
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    font-family: OpenSans;
+    color:  #0f0101;
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 11px;/* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    margin-right:30px;
+}
+.logo{
+    float:left;
+    font-family: Roboto;
+    color:  #555252;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 32px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+}
+.logo::first-letter{
+    font-family: Roboto;
+    color:  #1abc9c;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+}
+.slider{
+    min-height: 599px;
+    background: url('../img/back.png'); /*фон*/
+    background-size: cover;
+    
+    text-align: center;
+    position: relative;
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #000000;
+    opacity: 0.52;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.slider-block{
+    margin-top:205px;
+    display: inline-block;
+  /* margin: 0 auto;
+   width:768px;*/
+   position: relative;
+}
+.lt, .rt{
+    background-color:  rgba(78, 198, 171, 0.65);
+    width: 104px;
+    height: 104px;
+    border: 0;
+}
+.lt{
+    position: absolute;
+    left:-180px;
+    top:15px;
+}
+.rt{
+    position: absolute;
+    right:-180px;
+    top:15px;
+}
+.slider h1{
+    font-family: "Roboto Black";
+    color:  #ffffff;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 82px;
+    text-align: left;
+    margin:0;
+}
+.tips{
+    font-family: "Roboto light";
+    color:  #ffffff;
+    font-size: 24px;
+}
